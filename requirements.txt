@@ -1,5 +1,4 @@
 # I have not tried the gpu
 #tensorflow-gpu==1.4.0
 tensorflow==1.4.0
-# Unfortunately, the version is missing
 OpenNMT-tf==1.15.0
