@@ -1,6 +1,6 @@
 #/bin/bash
 
-source VENV/bin/activate
+source ./venv35/bin/activate
 
 cat ./env
 source ./env

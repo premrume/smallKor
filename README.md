@@ -9,22 +9,41 @@ crawl, walk, run
 
 * [Korean Corpus Example for Training](https://github.com/jungyeul/korean-parallel-corpora/blob/master/korean-english-news-v1/korean-english-park.train.tar.gz)
 
+* Helper scripts provided in this git repo that more or less follow OpenNMT Quickstart (usage is explained in the steps below)
+```
+> ls *.sh
+0_install.sh
+1_prep.sh
+2_vocab.sh
+3_train_export_bidirectional_big.sh # train... 
+3_train_export_bidirectional_med.sh
+3_train_export.sh
+4_infer.sh
+```
+
+* Be aware of the python and tensorflow versions
+
 
 ## **Walk** (Prep Linux VM)
 
 * OS    :  Linux is required; no support for ms-windows
 
-* Python:  Need **python3**; NO support for 3.7
+* Python:  **python35** MUST be in your path; NO support for 3.6 or 3.7 (tensorflow 1.4.0 requires 3.5)
 ```
-# Example to check python version requirements:
-> python3 --version
-Python 3.6.8
-> pip3 --version
-pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+# Most likely, you will need to sudo install python35.  EG:  sudo dnf install python35 
+> python35 --version
+Python 3.5.7
+
+# Most likely, you will need to sudo pip install virtualenv
+> sudo pip install virtualenv
+# Example version
+> virtualenv --version
+16.6.0
 ```
+
 * Use helper script **0_install.sh** to setup virtual environment
 ```
-# If you are using a GPU, edit 0_install.sh to toggle the comment on the tensorflow-gpu
+# (1) If you are using a GPU, edit requirements.txt to use
 # Run the setup:
 ./0_install.sh
 ```

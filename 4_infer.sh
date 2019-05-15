@@ -1,8 +1,8 @@
 #/bin/bash
 
-source ./VENV/bin/activate
+source ./venv35/bin/activate
 
 set -x
 
-head -5
-onmt-main infer --auto_config --config data.yml --features_file ./data/kor-test.txt
+head -5 ./data/src-test.txt >/tmp/testfile.txt
+onmt-main infer --auto_config --config data.yml --features_file /tmp/testfile.txt

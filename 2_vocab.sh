@@ -1,7 +1,7 @@
 #/bin/bash
 
 source ./env
-source ./VENV/bin/activate
+source ./venv35/bin/activate
 
 # brut force
 set -x
