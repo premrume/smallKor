@@ -25,20 +25,18 @@ pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 
 ## **Walk some more** (Prep Data)
 
-* Setup text-file sentence pairs for both train and test into the dataOriginal folder
-
+* Copy text-file sentence pairs for both train and test into the dataOriginal folder
 ```
-# For example:
+# Example files of pairs:
 >ls dataOriginal
 en-test.txt  en-train.txt  kor-test.txt  kor-train.txt
 ```
 
-* Prepare environment to match your subfolder/filenames
-
+* Prepare **env** file to match your dataOriginal/filenames
 ```
 # Edit the env file to match your file. 
-vi env ...
-# change the SRC and TGT file names to match your data files
+vi env 
+# update the SRC and TGT file names to match your filenames in dataOriginal
 ```
 
 ## **Run**
