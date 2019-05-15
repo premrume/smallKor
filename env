@@ -13,15 +13,15 @@ SRC_TRAIN_FILE=kor-train.txt
 TGT_TEST_FILE=en-test.txt
 TGT_TRAIN_FILE=en-train.txt
 
-export SRC_TEST=${DATA_ORIG}/${SRC_TEST_FILE)
-export SRC_TRAIN=${DATA_ORIG}/{SRC_TRAIN_FILE)
+export SRC_TEST=${DATA_ORIG}/${SRC_TEST_FILE}
+export SRC_TRAIN=${DATA_ORIG}/${SRC_TRAIN_FILE}
 export TGT_TEST=${DATA_ORIG}/${TGT_TEST_FILE}
 export TGT_TRAIN=${DATA_ORIG}/${TGT_TRAIN_FILE}
 
-export SRC_TEST_PREP=${DATA_OUT}/${SRC_TEST_FILE}
-export SRC_TRAIN_PREP=${DATA_OUT}/${SRC_TRAIN_FILE}
-export TGT_TEST_PREP=${DATA_OUT}/{$TGT_TEST_FILE}
-export TGT_TRAIN_PREP=${DATA_OUT}/{$TGT_TRAIN_FILE}
+export SRC_TEST_PREP=${DATA_OUT}/src-test.txt
+export SRC_TRAIN_PREP=${DATA_OUT}/src-train.txt
+export TGT_TEST_PREP=${DATA_OUT}/tgt-test.txt
+export TGT_TRAIN_PREP=${DATA_OUT}/tgt-train.txt
 
 # Note src-vocab, tgt-vocab 
 export SRC_VOCAB=${DATA_OUT}/src-vocab.txt

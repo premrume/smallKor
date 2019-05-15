@@ -45,7 +45,21 @@ vi env
 # update the SRC and TGT file names to match your filenames in dataOriginal
 ```
 
-## **Run**
+* Use helper script **1_prep.sh** to tokenize data
 ```
-#  run scripts
+# Run the setup:
+./1_prep.sh
+```
+
+* Use helper script **2_vocab.sh** to create vocab file
+```
+# Run the setup:
+./2_vocab.sh
+```
+
+## **Run** (Create models....)
+* Use helper script **3_train_export_bidirectional_SIZE.sh**
+```
+# Run the trainer (either big, med, small):
+./3_train_export_bidirectional_big.sh**
 ```

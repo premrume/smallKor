@@ -1,6 +1,8 @@
 #/bin/bash
 
 source VENV/bin/activate
+
+cat ./env
 source ./env
 
 # Brut force ...
