@@ -14,13 +14,19 @@ crawl, walk, run
 
 * OS    :  Linux is required; no support for ms-windows
 
-* Python:  Need python ~3.6; no support for 3.7
+* Python:  Need **python3**; NO support for 3.7
 ```
 # Example to check python version requirements:
 > python3 --version
 Python 3.6.8
 > pip3 --version
 pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+```
+* Use helper script **0_install.sh** to setup virtual environment
+```
+# If you are using a GPU, edit 0_install.sh to toggle the comment on the tensorflow-gpu
+# Run the setup:
+./0_install.sh
 ```
 
 ## **Walk some more** (Prep Data)
