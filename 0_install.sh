@@ -6,6 +6,6 @@ set -x
 python3 -m venv VENV
 source VENV/bin/activate
 
-#pip install tensorflow-gpu
-pip3 install tensorflow
+#pip3 install tensorflow-gpu==1.4.0
+pip3 install tensorflow==1.4.0
 pip3 install OpenNMT-tf

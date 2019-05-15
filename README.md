@@ -61,7 +61,7 @@ vi env
 * Use helper script **3_train_export_bidirectional_SIZE.sh**
 ```
 # Run the trainer (either big, med, small):
-./3_train_export_bidirectional_big.sh**
+./3_train_export_bidirectional_big.sh
 ```
 
 * The output models are in the run folder ... good luck
