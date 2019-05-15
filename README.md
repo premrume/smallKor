@@ -23,7 +23,6 @@ crawl, walk, run
 
 * Be **aware of the python and tensorflow versions**
 
-
 ## **Walk** (Prep Linux VM)
 
 * OS    :  Linux is required; no support for ms-windows
@@ -80,6 +79,7 @@ vi env
 * Use helper script **3_train_export_bidirectional_SIZE.sh**
 ```
 # Run the trainer (either big, med, small):
+# edit data.yml if you dare.  it is using the opennmt defaults ...
 ./3_train_export_bidirectional_big.sh
 ```
 
