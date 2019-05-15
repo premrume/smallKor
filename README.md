@@ -24,8 +24,21 @@ pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 ```
 
 ## **Walk some more** (Prep Data)
+
+* Setup text-file sentence pairs for both train and test into the dataOriginal folder
+
 ```
-# data in git
+# For example:
+>ls dataOriginal
+en-test.txt  en-train.txt  kor-test.txt  kor-train.txt
+```
+
+* Prepare environment to match your subfolder/filenames
+
+```
+# Edit the env file to match your file. 
+vi env ...
+# change the SRC and TGT file names to match your data files
 ```
 
 ## **Run**
