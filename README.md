@@ -9,19 +9,19 @@ crawl, walk, run
 
 * [Korean Corpus Example for Training](https://github.com/jungyeul/korean-parallel-corpora/blob/master/korean-english-news-v1/korean-english-park.train.tar.gz)
 
-* Helper scripts provided in this git repo that more or less follow OpenNMT Quickstart (usage is explained in the steps below)
+* FYSA:  Helper scripts provided in this git repo more or less follow OpenNMT Quickstart (usage is explained in the steps below)
 ```
 > ls *.sh
 0_install.sh
 1_prep.sh
 2_vocab.sh
-3_train_export_bidirectional_big.sh # train... 
+3_train_export_bidirectional_big.sh
 3_train_export_bidirectional_med.sh
 3_train_export.sh
 4_infer.sh
 ```
 
-* Be aware of the python and tensorflow versions
+* Be **aware of the python and tensorflow versions**
 
 
 ## **Walk** (Prep Linux VM)
@@ -30,27 +30,30 @@ crawl, walk, run
 
 * Python:  **python35** MUST be in your path; NO support for 3.6 or 3.7 (tensorflow 1.4.0 requires 3.5)
 ```
-# Most likely, you will need to sudo install python35.  EG:  sudo dnf install python35 
-> python35 --version
+# Most likely, you will need to sudo install python35.  (EG:)
+>sudo dnf install python35 
+>python35 --version
 Python 3.5.7
+```
 
+* Virtual Environment:  **python35**  uses virtualenv
+```
 # Most likely, you will need to sudo pip install virtualenv
-> sudo pip install virtualenv
+>sudo pip install virtualenv
 # Example version
-> virtualenv --version
+>virtualenv --version
 16.6.0
 ```
 
-* Use helper script **0_install.sh** to setup virtual environment
+* Use helper script to setup:   **0_install.sh** 
 ```
-# (1) If you are using a GPU, edit requirements.txt to use
-# Run the setup:
+# If you are using a GPU, edit requirements.txt to use tensorflow-gpu
 ./0_install.sh
 ```
 
 ## **Walk some more** (Prep Data)
 
-* Copy text-file sentence pairs for both train and test into the dataOriginal folder
+* Datafiles:  Copy text-file sentence pairs for both train and test into the dataOriginal folder
 ```
 # Example files of pairs:
 >ls dataOriginal
@@ -59,20 +62,17 @@ en-test.txt  en-train.txt  kor-test.txt  kor-train.txt
 
 * Prepare **env** file to match your dataOriginal/filenames
 ```
-# Edit the env file to match your file. 
+# Env:  Edit the env file to match your filenames (SRC and TGT)
 vi env 
-# update the SRC and TGT file names to match your filenames in dataOriginal
 ```
 
 * Use helper script **1_prep.sh** to tokenize data
 ```
-# Run the setup:
 ./1_prep.sh
 ```
 
 * Use helper script **2_vocab.sh** to create vocab file
 ```
-# Run the setup:
 ./2_vocab.sh
 ```
 
@@ -83,4 +83,4 @@ vi env
 ./3_train_export_bidirectional_big.sh
 ```
 
-* The output models are in the run folder ... good luck
+* The output models are in the run folder ... good luck with that...
