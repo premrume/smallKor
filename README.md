@@ -27,7 +27,7 @@ crawl, walk, run
 
 * OS    :  Linux is required; no support for ms-windows
 
-* Python:  **python35** MUST be in your path; NO support for 3.6 or 3.7 (tensorflow 1.4.0 requires 3.5)
+* Python:  **python35** MUST be in your path; NO support for 3.6 or 3.7 with this run
 ```
 # Most likely, you will need to sudo install python35.  (EG:)
 >sudo dnf install python35 
@@ -84,3 +84,9 @@ vi env
 ```
 
 * The output models are in the run folder ... good luck with that...
+
+## Test it out (Infer...)
+```
+./4_infer.sh
+```
+
